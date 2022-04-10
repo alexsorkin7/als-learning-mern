@@ -1,5 +1,8 @@
-let fo = require('als-fo')
-process.env = fo.require([__dirname,'env.js'])
+// let fo = require('als-fo')
+// process.env = fo.require([__dirname,'env.js'])
+if(process.env.NODE_ENV !== 'production') {
+   require('dotenv').config()
+}
 
 const express = require('express')
 const app = express()
