@@ -24,12 +24,12 @@
    <input type="number" name="pageCount" min="1" value="<%= book.pageCount %>">
 </div>
 <div>
-   <label>Cover</label>
-   <input type="file" name="cover">
-</div>
-<div>
    <label>Description</label>
    <textarea name="description">
       <% book.description %>
    </textarea>
+</div>
+<div>
+   <label>Cover</label>
+   <input type="file" name="cover" class="filepond" accept="image/png, image/jpeg, image/gif">
 </div>
